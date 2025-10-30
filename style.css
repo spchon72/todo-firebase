@@ -1,0 +1,24 @@
+body { font-family: 'Noto Sans KR', sans-serif; background: #f8f9fa; margin: 0; }
+.dashboard { max-width: 680px; margin: 40px auto; background: white; border-radius: 16px; padding: 24px 28px; box-shadow: 0 2px 12px #b3b3d190; }
+h1 { margin-top: 0; margin-bottom:18px; font-size:2.1em; letter-spacing:-1px; }
+form { display: flex; gap: 10px; margin-bottom: 18px; }
+form input, form button { padding: 8px; font-size: 17px; border-radius: 5px; border: 1px solid #e2e2e2; }
+form input:focus { outline: 2px solid #1766f2; }
+ul { list-style: none; padding: 0; margin:0; }
+.filter-btns { display: flex; gap: 8px; margin-bottom: 20px; align-items: center; }
+.filter { padding: 7px 16px; border: none; border-radius: 6px; background: #f1f1fa; color: #222; font-weight: 500; cursor: pointer; transition: 0.17s; font-size:1em; box-shadow:none; }
+.filter.active, .filter:hover { background: #1766f2; color: #fff; }
+#alarm-permission-btn { margin-left: auto; padding: 8px 22px; border: none; border-radius: 6px; background: #ffa502; color: #fff; font-weight: 600; cursor: pointer; font-size:1.05em; }
+
+li { background: #f7f8ff; border: 1.5px solid #ebeefd; border-radius: 8px; padding:14px 14px 12px 14px; margin-bottom:14px; min-height:48px; display:flex; align-items:center; justify-content:space-between; box-shadow:0 1px 7px #ececff80; transition: box-shadow 0.15s; width: auto; max-width: 100%; box-sizing: border-box; }
+li:hover { box-shadow:0 4px 18px #b2beff52; background:#f0f4ff; }
+li .task-title { font-size: 1.16em; font-weight: 500; display:inline-flex; align-items: center; gap:11px; word-break:keep-all; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:360px; }
+li .deadline-soon { color:#ea202a; font-weight:bold; margin-left:8px; letter-spacing:-0.5px; }
+li .task-actions { display: flex; align-items: center; gap:2px; flex-wrap:nowrap; white-space:nowrap; }
+li .task-actions button { font-size: .97em; padding: 5px 13px; background: #f4f7fc;border:1px solid #dde1ef; border-radius: 5px; margin-left: 0; margin-right:2px; transition:background .16s,border .16s; cursor:pointer; white-space:nowrap; min-width:46px; }
+li .task-actions button:hover { background: #e1ebfd; border:1.5px solid #588bfd; color:#1766f2 }
+li.done { color: #acaec2; text-decoration: line-through; background: #f3f4fb;border: 1.2px solid #e2e3ee; }
+li.active { background: #f5fbff; }
+li.done .task-title { color: #b7b7be; }
+
+.quote { background: #d7e8ff; border-radius: 8px; text-align: center; margin: 16px auto 10px auto; padding: 16px; font-size: 1.13em; font-weight:500; letter-spacing:-.5px; }

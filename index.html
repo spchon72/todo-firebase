@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>할일 관리 대시보드</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- 기존 compat 방식은 삭제 또는 주석 처리 -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script> -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script> -->
+</head>
+<body>
+  <div id="quote-of-the-day" class="quote"></div>
+  <div class="dashboard">
+    <h1>할일 관리</h1>
+    <form id="task-form">
+      <input type="text" id="title" placeholder="할일을 입력하세요" required />
+      <input type="date" id="deadline" required />
+      <button type="submit">추가</button>
+    </form>
+    <div class="filter-btns">
+      <button type="button" class="filter" data-status="all">전체</button>
+      <button type="button" class="filter" data-status="active">미완료</button>
+      <button type="button" class="filter" data-status="done">완료</button>
+      <button id="alarm-permission-btn" type="button">알림 허용</button>
+    </div>
+    <ul id="tasks-list"></ul>
+  </div>
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="quotes.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
